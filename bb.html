@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolaji | Visual Designer</title>
+    <title>LinkCart Market | Shop Anything Online</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,231 +12,216 @@
 </head>
 
 <body>
-    <!-- Header with CSS-only mobile menu -->
+    <div class="page-loader" aria-hidden="true"></div>
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">Bolaji<span> Gbenga</span></a>
+            <a href="#hero" class="logo">LinkCart<span> Market</span></a>
 
-            <!-- Hidden checkbox for menu state -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-button">&#9776;</label>
+            <label for="menu-toggle" class="menu-button" aria-label="Open navigation">&#9776;</label>
 
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#order">Order</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
                 <div class="hero-text">
-                    <h1>Visual Design <span>That</span> Tells Your Story</h1>
-                    <p>I create compelling brand identities and digital experiences that connect with your audience and
-                        drive meaningful results.</p>
+                    <p class="eyebrow">Smart shopping, supplier fulfilled</p>
+                    <h1>Buy clothes, gadgets, home items, and more from one simple storefront.</h1>
+                    <p>Choose what you want, send your order, and LinkCart prepares a supplier checkout handoff so the
+                        connected shop can fulfill it. Replace the supplier links with your own partner store URLs when
+                        you are ready to launch.</p>
                     <div class="hero-btns">
-                        <a href="#work" class="btn">View Portfolio</a>
-                        <a href="#contact" class="btn btn-outline">Get Started</a>
+                        <a href="#products" class="btn">Start Shopping</a>
+                        <a href="#how-it-works" class="btn btn-outline">See Automation Plan</a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="assets/hero-image.jpg" alt="Bolaji" class="hero-img">
-                    <div class="hero-shape"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work" class="section section-dark">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="assets/p-1.avif" alt="Mobile App Design" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Pulse Fitness App</h3>
-                        <p>UI/UX design for health tracking mobile application with custom illustrations.</p>
-                        <a href="#" class="btn">View Project</a>
+                <div class="hero-card" aria-label="Shopping summary preview">
+                    <div class="card-topline">
+                        <span>Live Cart</span>
+                        <i class="fa-solid fa-bag-shopping"></i>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="assets/p-2.avif" alt="Website Design" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Horizon Web Platform</h3>
-                        <p>Responsive website design with custom CMS integration for travel company.</p>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="assets/p-3.avif" alt="Brand Identity" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Nova Brand Identity</h3>
-                        <p>Complete visual identity for tech startup including logo and brand guidelines.</p>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/about.avif" alt="About Eva" class="about-img">
-                    <div class="about-shape"></div>
-                </div>
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <h3>Design is a powerful tool for communication and connection.</h3>
-                    <p>With 8 years of experience in the design industry, I've helped businesses of all sizes create
-                        meaningful connections with their audiences through thoughtful design solutions.</p>
-                    <p>My approach combines strategic thinking with aesthetic sensibility to create work that is both
-                        beautiful and effective.</p>
-
-                    <div class="skills">
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>UI/UX Design</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
+                    <h2>Fast supplier handoff</h2>
+                    <p>Select products here, then open the connected store checkout with your order details.</p>
+                    <div class="mini-stat-grid">
+                        <div>
+                            <strong>24/7</strong>
+                            <span>Online orders</span>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Brand Identity</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
+                        <div>
+                            <strong>6</strong>
+                            <span>Demo products</span>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Illustration</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                        <div>
+                            <strong>1-click</strong>
+                            <span>Supplier link</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section section-dark">
-        <div class="container">
-            <h2>My Services</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="assets/s-1.avif" alt="Brand Strategy" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Brand Strategy</h3>
-                        <p>Developing cohesive brand identities that communicate your values.</p>
-                        <a href="#contact" class="btn">Get Started</a>
-                    </div>
+        <section id="products" class="section reveal-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Featured catalog</p>
+                    <h2>Shop popular items</h2>
+                    <p>These sample products show how your store can sell many categories while sending order details to
+                        the linked supplier website.</p>
                 </div>
-                <div class="portfolio-item">
-                    <img src="assets/s-2.avif" alt="UI/UX Design" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>UI/UX Design</h3>
-                        <p>Creating intuitive digital experiences that prioritize user needs.</p>
-                        <a href="#contact" class="btn">Get Started</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="assets/s-3.avif" alt="Visual Design" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Visual Design</h3>
-                        <p>Crafting compelling visuals that tell your brand's story.</p>
-                        <a href="#contact" class="btn">Get Started</a>
-                    </div>
+
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="assets/p-1.avif" alt="Streetwear hoodie" class="product-img">
+                        <div class="product-body">
+                            <span class="category">Clothing</span>
+                            <h3>Urban Comfort Hoodie</h3>
+                            <p>Premium everyday hoodie with relaxed fit and soft cotton blend.</p>
+                            <div class="product-footer">
+                                <strong>$49.00</strong>
+                                <button class="btn btn-small add-to-cart" data-name="Urban Comfort Hoodie"
+                                    data-price="49" data-supplier="https://example-supplier.com/products/urban-hoodie">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/p-2.avif" alt="Wireless smart watch" class="product-img">
+                        <div class="product-body">
+                            <span class="category">Gadgets</span>
+                            <h3>Everyday Smart Watch</h3>
+                            <p>Track calls, activity, and notifications with a modern lightweight watch.</p>
+                            <div class="product-footer">
+                                <strong>$89.00</strong>
+                                <button class="btn btn-small add-to-cart" data-name="Everyday Smart Watch"
+                                    data-price="89" data-supplier="https://example-supplier.com/products/smart-watch">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/p-3.avif" alt="Fashion backpack" class="product-img">
+                        <div class="product-body">
+                            <span class="category">Bags</span>
+                            <h3>Travel Lite Backpack</h3>
+                            <p>Durable backpack with laptop storage for school, work, and travel.</p>
+                            <div class="product-footer">
+                                <strong>$64.00</strong>
+                                <button class="btn btn-small add-to-cart" data-name="Travel Lite Backpack"
+                                    data-price="64" data-supplier="https://example-supplier.com/products/backpack">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/s-1.avif" alt="Sneakers" class="product-img">
+                        <div class="product-body">
+                            <span class="category">Shoes</span>
+                            <h3>Cloud Step Sneakers</h3>
+                            <p>Comfort sneakers with breathable material and all-day support.</p>
+                            <div class="product-footer">
+                                <strong>$72.00</strong>
+                                <button class="btn btn-small add-to-cart" data-name="Cloud Step Sneakers"
+                                    data-price="72" data-supplier="https://example-supplier.com/products/sneakers">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/s-2.avif" alt="Desk lamp" class="product-img">
+                        <div class="product-body">
+                            <span class="category">Home</span>
+                            <h3>LED Desk Lamp</h3>
+                            <p>Minimal desk lamp with adjustable brightness for workspaces and bedrooms.</p>
+                            <div class="product-footer">
+                                <strong>$38.00</strong>
+                                <button class="btn btn-small add-to-cart" data-name="LED Desk Lamp" data-price="38"
+                                    data-supplier="https://example-supplier.com/products/desk-lamp">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/s-3.avif" alt="Headphones" class="product-img">
+                        <div class="product-body">
+                            <span class="category">Audio</span>
+                            <h3>Noise-Free Headphones</h3>
+                            <p>Wireless headphones with deep bass and comfortable ear cushions.</p>
+                            <div class="product-footer">
+                                <strong>$58.00</strong>
+                                <button class="btn btn-small add-to-cart" data-name="Noise-Free Headphones"
+                                    data-price="58" data-supplier="https://example-supplier.com/products/headphones">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section">
-        <div class="container">
-            <h2>Client Testimonials</h2>
-            <div class="testimonials-container">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">Eva transformed our brand identity completely. Her attention to detail
-                        and strategic approach resulted in a visual system that perfectly represents our values.</p>
-                    <div class="testimonial-author">
-                        <img src="assets/c-1.avif" alt="Sarah Kim" class="author-img">
-                        <div class="author-info">
-                            <h4>Sarah Kim</h4>
-                            <p>CEO, Nova Tech</p>
-                        </div>
+        <section id="how-it-works" class="section section-dark reveal-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Automation plan</p>
+                    <h2>How the linked shop flow works</h2>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <span>01</span>
+                        <h3>Customer orders here</h3>
+                        <p>Your customer adds products to the cart and fills in shipping details on this website.</p>
+                    </div>
+                    <div class="step-card">
+                        <span>02</span>
+                        <h3>Supplier link opens</h3>
+                        <p>The order button opens the connected supplier URL and copies the customer order summary.</p>
+                    </div>
+                    <div class="step-card">
+                        <span>03</span>
+                        <h3>Production upgrade</h3>
+                        <p>For true automatic ordering, connect a backend to a supplier API, Shopify app, WooCommerce
+                            REST API, or dropshipping service that allows programmatic checkout.</p>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">Working with Eva was a game-changer for our app. She took our rough
-                        concept and turned it into an intuitive, beautiful interface our users love.</p>
-                    <div class="testimonial-author">
-                        <img src="assets/c-2.avif" alt="Michael Chen" class="author-img">
-                        <div class="author-info">
-                            <h4>Michael Chen</h4>
-                            <p>Product Lead, Pulse</p>
-                        </div>
-                    </div>
-                </div>
+                <p class="notice"><strong>Important:</strong> a static website cannot securely place paid orders on
+                    another shop by itself. This front-end is ready for supplier handoff now, and the next step is adding
+                    approved API credentials on a secure server.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section-dark">
-        <div class="container">
-            <h2>Let's Work Together</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p>Have a project in mind or want to discuss potential collaboration? I'd love to hear from you.</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fa-solid fa-envelope-circle-check"></i></div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p>hello@bolaji.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <p>+234 (704) 634-3578</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="contact-text">
-                                <h4>Studio</h4>
-                                <p>B13 Adaza mall, Challenge</p>
-                            </div>
-                        </div>
+        <section id="order" class="section reveal-section">
+            <div class="container order-layout">
+                <div>
+                    <p class="eyebrow">Your order</p>
+                    <h2>Cart summary</h2>
+                    <div id="cart-items" class="cart-items">
+                        <p class="empty-cart">Your cart is empty. Add an item to begin.</p>
                     </div>
+                    <div class="cart-total">
+                        <span>Total</span>
+                        <strong id="cart-total">$0.00</strong>
+                    </div>
+                    <button id="clear-cart" class="btn btn-outline btn-wide" type="button">Clear Cart</button>
                 </div>
-                <div class="contact-form">
-                    <form>
+
+                <div class="checkout-card">
+                    <h3>Delivery details</h3>
+                    <form id="order-form">
                         <div class="form-group">
-                            <label for="name">Your Name</label>
+                            <label for="name">Full Name</label>
                             <input type="text" id="name" required>
                         </div>
                         <div class="form-group">
@@ -244,41 +229,137 @@
                             <input type="email" id="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Project Type</label>
-                            <input type="text" id="subject">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Tell Me About Your Project</label>
-                            <textarea id="message" required></textarea>
+                            <label for="address">Shipping Address</label>
+                            <textarea id="address" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="btn btn-wide">Send Order to Supplier</button>
+                        <p id="order-status" class="form-status" role="status"></p>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <a href="#" class="footer-logo">Bolaji<span> Gbenga</span></a>
-                <ul class="footer-links">
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="footer-social">
-                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <section id="contact" class="section section-dark reveal-section">
+            <div class="container contact-strip">
+                <div>
+                    <p class="eyebrow">Need help?</p>
+                    <h2>Launch your connected shop</h2>
+                    <p>Replace demo product links with real supplier URLs, then add a secure backend when your supplier
+                        provides API access for automatic purchases.</p>
                 </div>
-                <p class="copyright">© 2025 Bolaji Gbenga. All rights reserved.</p>
+                <a href="mailto:hello@linkcartmarket.com" class="btn">hello@linkcartmarket.com</a>
             </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <a href="#hero" class="footer-logo">LinkCart<span> Market</span></a>
+            <ul class="footer-links">
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="copyright">© 2026 LinkCart Market. Demo storefront for supplier-linked ecommerce.</p>
         </div>
     </footer>
+
+    <script>
+        const cart = [];
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        const orderStatus = document.getElementById('order-status');
+
+        function renderCart() {
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="empty-cart">Your cart is empty. Add an item to begin.</p>';
+                cartTotal.textContent = '$0.00';
+                return;
+            }
+
+            cartItems.innerHTML = cart.map((item, index) => `
+                <div class="cart-item">
+                    <div>
+                        <strong>${item.name}</strong>
+                        <span>$${item.price.toFixed(2)}</span>
+                    </div>
+                    <button type="button" aria-label="Remove item" onclick="removeFromCart(${index})">Remove</button>
+                </div>
+            `).join('');
+
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+            cartTotal.textContent = `$${total.toFixed(2)}`;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+
+        document.querySelectorAll('.add-to-cart').forEach((button) => {
+            button.addEventListener('click', () => {
+                cart.push({
+                    name: button.dataset.name,
+                    price: Number(button.dataset.price),
+                    supplier: button.dataset.supplier
+                });
+                button.classList.add('is-added');
+                button.textContent = 'Added!';
+                setTimeout(() => {
+                    button.classList.remove('is-added');
+                    button.textContent = 'Add to Cart';
+                }, 900);
+                renderCart();
+                document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.getElementById('clear-cart').addEventListener('click', () => {
+            cart.length = 0;
+            renderCart();
+            orderStatus.textContent = '';
+        });
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.16 });
+
+        document.querySelectorAll('.reveal-section, .product-card, .step-card, .checkout-card').forEach((element) => {
+            revealObserver.observe(element);
+        });
+
+        document.getElementById('order-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            if (cart.length === 0) {
+                orderStatus.textContent = 'Please add at least one product before sending your order.';
+                return;
+            }
+
+            const customer = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('address').value
+            };
+            const orderSummary = cart.map((item) => `${item.name} - $${item.price.toFixed(2)}`).join('\n');
+            const message = `New LinkCart order\n\nCustomer: ${customer.name}\nEmail: ${customer.email}\nPhone: ${customer.phone}\nAddress: ${customer.address}\n\nItems:\n${orderSummary}\n\nTotal: ${cartTotal.textContent}`;
+
+            navigator.clipboard?.writeText(message);
+            orderStatus.textContent = 'Order summary copied. Opening the first supplier product link in a new tab.';
+            window.open(cart[0].supplier, '_blank', 'noopener,noreferrer');
+        });
+    </script>
 </body>
 
 </html>
